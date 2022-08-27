@@ -1,13 +1,14 @@
 import React from 'react';
+import '../hojas-de-estilo/Boton.css';
 
-function Boton({texto, esBotonDeClick, manejarClick}) {
+function Boton({ texto, esBotonDeClic, manejarClic }) {
   return (
     <button
-      className={ esBotonDeClick ? 'boton-click' : 'boton-reiniciar' }
-      onClick={manejarClick} >
-      {texto} 
+      className={esBotonDeClic ? 'boton-clic' : 'boton-reiniciar'}
+      onClick={manejarClic}>
+      {texto}
     </button>
-  ) // sintaxis de desestructuración
+  );
 }
 
 export default Boton;
