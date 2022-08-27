@@ -2,15 +2,19 @@ import './App.css';
 import Contador from './componentes/Contador';
 import Boton from './componentes/Boton';
 import freeCodeCampLogo from './imagenes/freecodecamp-logo.png';
-import { useState } from 'react';
+import { useState } from 'react'; // para poder usar hoks
 
 function App() {
 
+  const [numClics, setNumClics] = useState(0);
+
   const manejarClic = () => {
-  }
+    setNumClics(numClics + 1);
+  };
 
   const reiniciarContador = () => {
-  }
+    setNumClics(0)
+  };
 
   return (
     <div className='App'>
@@ -22,8 +26,7 @@ function App() {
       </div>
       <div className='contenedor-principal'>
         <Contador 
-          numClics='5'
-        />
+          numClics={numClics} />
         <Boton 
           texto='Clic'
           esBotonDeClic={true}
@@ -35,6 +38,6 @@ function App() {
       </div>
     </div>
   );
-}
+};
 
 export default App;
