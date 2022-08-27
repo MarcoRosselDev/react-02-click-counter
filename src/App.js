@@ -7,6 +7,9 @@ function App() {
   const manejarClick = () => {
     console.log('click');
   }
+  const reiniciarContador = () => {
+    console.log('reiniciar');
+  }
 
   return (
     <div className='App'>
@@ -20,12 +23,12 @@ function App() {
         <Boton 
           texto='click'
           esBotonDeclick={true}
-          manejarClick={}
+          manejarClick={manejarClick}
         />
         <Boton 
           texto='Reiniciar'
           esBotonDeclick={false}
-          manejarClick={}
+          manejarClick={reiniciarContador}
         />
       </div>
     </div>

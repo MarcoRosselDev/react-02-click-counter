@@ -4,7 +4,8 @@ function Boton({texto, esBotonDeClick, manejarClick}) {
   return (
     <button
       className={ esBotonDeClick ? 'boton-click' : 'boton-reiniciar' }
-      onClick={manejarClick}>
+      onClick={manejarClick} >
+      {texto} 
     </button>
   ) // sintaxis de desestructuración
 }
