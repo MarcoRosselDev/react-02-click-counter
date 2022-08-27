@@ -1,8 +1,9 @@
-import React from "react";
+import React from 'react';
 
-function Boton({texto}) {
+function Boton({texto, esBotonDeClick}) {
   return (
-    <button>
+    <button
+      className={ esBotonDeClick ? 'boton-click' : 'boton-reiniciar' }>
       {texto} 
     </button>
   ) // sintaxis de desestructuración
