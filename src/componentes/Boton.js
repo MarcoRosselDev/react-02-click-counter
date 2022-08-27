@@ -8,3 +8,5 @@ function Boton({texto, esBotonDeClick, manejarClick}) {
     </button>
   ) // sintaxis de desestructuración
 }
+
+export default Boton;
